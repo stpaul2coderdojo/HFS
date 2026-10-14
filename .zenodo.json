@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "upload_type": "software",
   "publication_date": "2026-10-14",
-  "doi": "10.5281/zenodo.14028912",
+  "doi": "10.5281/zenodo.23366904",
   "keywords": [
     "Linux Kernel",
     "Memory-Resident Kernel",
@@ -31,7 +31,7 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://doi.org/10.5281/zenodo.14028912",
+      "identifier": "https://doi.org/10.5281/zenodo.23366904",
       "relation": "isDocumentedBy",
       "scheme": "doi"
     }

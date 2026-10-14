@@ -26,7 +26,7 @@ export const WhitePaperModal: React.FC<WhitePaperModalProps> = ({ isOpen, onClos
 
   if (!isOpen) return null;
 
-  const doi = "10.5281/zenodo.14028912";
+  const doi = "10.5281/zenodo.23366904";
   const zenodoUrl = `https://doi.org/${doi}`;
 
   const bibtex = `@article{bheemaiah2026hfs,
@@ -37,8 +37,8 @@ export const WhitePaperModal: React.FC<WhitePaperModalProps> = ({ isOpen, onClos
   month={October},
   version={1.0.0},
   publisher={Zenodo},
-  doi={10.5281/zenodo.14028912},
-  url={https://doi.org/10.5281/zenodo.14028912}
+  doi={10.5281/zenodo.23366904},
+  url={https://doi.org/10.5281/zenodo.23366904}
 }`;
 
   const zenodoJson = `{
@@ -66,7 +66,7 @@ export const WhitePaperModal: React.FC<WhitePaperModalProps> = ({ isOpen, onClos
     "Synergy Robotics",
     "Zenodo"
   ],
-  "doi": "10.5281/zenodo.14028912"
+  "doi": "10.5281/zenodo.23366904"
 }`;
 
   const whitepaperText = `# Cryptographic Hole-Buffer Hashing in Memory-Resident Kernels
@@ -75,7 +75,7 @@ export const WhitePaperModal: React.FC<WhitePaperModalProps> = ({ isOpen, onClos
 **Affiliations:** Director, Synergy Robotics | IIT Madras Alumni  
 **Contact:** bheemaiah@alumni.iitm.ac.in  
 **Release:** Version 1.0.0 | October 2026  
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.14028912  
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.23366904  
 
 ---
 
@@ -109,7 +109,7 @@ This white paper presents HFS (Hole-buffer File System) integrated with an auton
 - Trailing virus detection accuracy: 100% on tested slack/hole injection strains with automated quarantine.
 
 ### 4. Open Science & Archival
-This release is archived on Zenodo under DOI 10.5281/zenodo.14028912 as Version 1.0.0. Complete reproducibility scripts and kernel sources are licensed under Apache 2.0 / GPLv2.
+This release is archived on Zenodo under DOI 10.5281/zenodo.23366904 as Version 1.0.0. Complete reproducibility scripts and kernel sources are licensed under Apache 2.0 / GPLv2.
 `;
 
   const handleCopy = (text: string, type: 'bibtex' | 'doi') => {
@@ -181,10 +181,16 @@ This release is archived on Zenodo under DOI 10.5281/zenodo.14028912 as Version 
               href={zenodoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2.5 py-1 bg-blue-950 text-blue-300 border border-blue-800 rounded hover:bg-blue-900 transition-colors flex items-center space-x-1.5 font-bold"
+              className="inline-flex items-center rounded overflow-hidden border border-slate-700 shadow hover:opacity-90 transition-opacity"
+              title="Open DOI record on Zenodo"
             >
-              <span>{doi}</span>
-              <ExternalLink className="w-3 h-3" />
+              <span className="bg-[#454545] text-white text-[11px] font-sans font-semibold px-2 py-0.5 select-none">
+                DOI
+              </span>
+              <span className="bg-[#0072ce] text-white text-[11px] font-sans font-bold px-2.5 py-0.5 tracking-tight flex items-center gap-1.5">
+                <span>{doi}</span>
+                <ExternalLink className="w-3 h-3 inline" />
+              </span>
             </a>
             <button
               onClick={() => handleCopy(doi, 'doi')}

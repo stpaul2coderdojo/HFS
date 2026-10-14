@@ -3,7 +3,7 @@
 # Antigravity Autonomous HFS & Memory-Resident Debian Kernel Deployer
 # Author: Bheemaiah (bheemaiah@alumni.iitm.ac.in)
 # Affiliations: Director, Synergy Robotics | IIT Madras Alumni
-# Release: Version 1.0.0 | Zenodo DOI: 10.5281/zenodo.14028912
+# Release: Version 1.0.0 | Zenodo DOI: 10.5281/zenodo.23366904
 # Target: Debian 12 (Bookworm) / Linux 6.12+
 # Architecture: Zero-Disk Persistent Spindle Writes (100% Volatile RAM Execution)
 # ==============================================================================
@@ -12,7 +12,7 @@ set -euo pipefail
 echo "======================================================================"
 echo " Antigravity HFS: Memory-Resident Kernel & Loopback RAM Disk Deployer"
 echo " Author: Bheemaiah (Director, Synergy Robotics | IIT Madras Alumni)"
-echo " Release: v1.0.0 | Zenodo DOI: 10.5281/zenodo.14028912"
+echo " Release: v1.0.0 | Zenodo DOI: 10.5281/zenodo.23366904"
 echo "======================================================================"
 
 # Check for root

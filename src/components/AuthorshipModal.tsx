@@ -103,13 +103,19 @@ export const AuthorshipModal: React.FC<AuthorshipModalProps> = ({
                 <span className="font-semibold text-slate-300">Zenodo Archive & DOI</span>
               </div>
               <a
-                href="https://doi.org/10.5281/zenodo.14028912"
+                href="https://doi.org/10.5281/zenodo.23366904"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-amber-400 hover:text-amber-300 font-bold flex items-center space-x-1"
+                className="inline-flex items-center rounded overflow-hidden border border-slate-700 shadow hover:opacity-90 transition-opacity mt-0.5"
+                title="View Zenodo Record"
               >
-                <span>10.5281/zenodo.14028912</span>
-                <ExternalLink className="w-3 h-3 inline" />
+                <span className="bg-[#454545] text-white text-[10px] font-sans font-semibold px-2 py-0.5 select-none">
+                  DOI
+                </span>
+                <span className="bg-[#0072ce] text-white text-[10px] font-sans font-bold px-2 py-0.5 tracking-tight flex items-center gap-1">
+                  <span>10.5281/zenodo.23366904</span>
+                  <ExternalLink className="w-2.5 h-2.5 inline" />
+                </span>
               </a>
               <div className="text-[11px] text-slate-500">Open Science Registry (Release v1.0.0)</div>
             </div>
@@ -135,7 +141,7 @@ export const AuthorshipModal: React.FC<AuthorshipModalProps> = ({
             <div className="space-y-1 text-slate-400 bg-slate-900/80 p-2.5 rounded border border-slate-800 font-mono">
               <div><strong className="text-slate-300">Author:</strong> Bheemaiah &lt;bheemaiah@alumni.iitm.ac.in&gt;</div>
               <div><strong className="text-slate-300">Affiliation:</strong> Director, Synergy Robotics | IIT Madras Alumni</div>
-              <div><strong className="text-slate-300">Publication:</strong> Zenodo DOI 10.5281/zenodo.14028912</div>
+              <div><strong className="text-slate-300">Publication:</strong> Zenodo DOI 10.5281/zenodo.23366904</div>
               <div><strong className="text-slate-300">License:</strong> Apache 2.0 (Application) / GPLv2 (hfs_kernel_guard.c)</div>
             </div>
           </div>

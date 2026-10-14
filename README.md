@@ -1,7 +1,7 @@
 # Antigravity HFS: Memory-Resident Debian Kernel & Loopback Hole-Buffer Guard
 
 [![Release](https://img.shields.io/badge/Release-v1.0.0-emerald.svg)](https://github.com/synergy-robotics/antigravity-hfs/releases/tag/v1.0.0)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14028912-blue.svg)](https://doi.org/10.5281/zenodo.14028912)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23366904-blue.svg)](https://doi.org/10.5281/zenodo.23366904)
 [![Kernel](https://img.shields.io/badge/Linux-6.12%2B%20Debian%2012-cyan.svg)](https://www.debian.org)
 [![Author](https://img.shields.io/badge/Author-Bheemaiah%20%7C%20Synergy%20Robotics-purple.svg)](mailto:bheemaiah@alumni.iitm.ac.in)
 [![Affiliation](https://img.shields.io/badge/Alma%20Mater-IIT%20Madras%20Alumni-orange.svg)](https://www.iitm.ac.in)
@@ -16,7 +16,7 @@ An autonomous agentic systems architecture designing, deploying, and supervising
 - **Principal Architect:** **Bheemaiah**
 - **Roles:** **Director, Synergy Robotics** | **IIT Madras Alumni (IITM)**
 - **Correspondence:** `bheemaiah@alumni.iitm.ac.in`
-- **Official Zenodo Archive:** [10.5281/zenodo.14028912](https://doi.org/10.5281/zenodo.14028912)
+- **Official Zenodo Archive:** [10.5281/zenodo.23366904](https://doi.org/10.5281/zenodo.23366904)
 - **Current Version:** `1.0.0` (October 2026)
 
 ---
@@ -158,8 +158,8 @@ If you use this architecture, white paper, or code in your research or industria
   month={October},
   version={1.0.0},
   publisher={Zenodo},
-  doi={10.5281/zenodo.14028912},
-  url={https://doi.org/10.5281/zenodo.14028912}
+  doi={10.5281/zenodo.23366904},
+  url={https://doi.org/10.5281/zenodo.23366904}
 }
 ```
 

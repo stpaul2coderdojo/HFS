@@ -329,7 +329,7 @@ export default function App() {
               onClick={() => setIsWhitePaperOpen(true)}
               className="text-purple-400 hover:text-purple-300 transition-colors font-medium cursor-pointer"
             >
-              Zenodo: 10.5281/zenodo.14028912
+              Zenodo: 10.5281/zenodo.23366904
             </button>
             <span className="text-slate-600">•</span>
             <button

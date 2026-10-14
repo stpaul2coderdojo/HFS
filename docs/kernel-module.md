@@ -2,7 +2,7 @@
 
 **Author:** Bheemaiah (Director, Synergy Robotics; IIT Madras Alumni)  
 **Release:** v1.0.0 (October 2026)  
-**Zenodo DOI:** [10.5281/zenodo.14028912](https://doi.org/10.5281/zenodo.14028912)  
+**Zenodo DOI:** [10.5281/zenodo.23366904](https://doi.org/10.5281/zenodo.23366904)  
 
 ---
 
@@ -39,7 +39,7 @@ The module instruments three primary kernel symbols:
  * Author: Bheemaiah <bheemaiah@alumni.iitm.ac.in>
  * Affiliation: Director, Synergy Robotics; IIT Madras Alumni
  * Target: Linux 6.12.x / Debian 12 (Bookworm)
- * Zenodo DOI: 10.5281/zenodo.14028912
+ * Zenodo DOI: 10.5281/zenodo.23366904
  */
 
 #include <linux/module.h>

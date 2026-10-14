@@ -2,7 +2,7 @@
 
 **Author:** Bheemaiah (Director, Synergy Robotics; IIT Madras Alumni)  
 **Release:** v1.0.0 (October 2026)  
-**Zenodo DOI:** [10.5281/zenodo.14028912](https://doi.org/10.5281/zenodo.14028912)  
+**Zenodo DOI:** [10.5281/zenodo.23366904](https://doi.org/10.5281/zenodo.23366904)  
 
 ---
 

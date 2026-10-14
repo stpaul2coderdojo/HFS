@@ -4,8 +4,8 @@
 **Affiliations:** Director, Synergy Robotics | IIT Madras Alumni  
 **Contact:** `bheemaiah@alumni.iitm.ac.in`  
 **Release:** Version 1.0.0 | October 2026  
-**Zenodo DOI:** [10.5281/zenodo.14028912](https://doi.org/10.5281/zenodo.14028912)  
-**Permanent URL:** https://doi.org/10.5281/zenodo.14028912  
+**Zenodo DOI:** [10.5281/zenodo.23366904](https://doi.org/10.5281/zenodo.23366904)  
+**Permanent URL:** https://doi.org/10.5281/zenodo.23366904  
 
 ---
 
@@ -58,7 +58,7 @@ The accompanying kernel module (`hfs_kernel_guard.c`) inserts tracepoint probes 
   month={October},
   version={1.0.0},
   publisher={Zenodo},
-  doi={10.5281/zenodo.14028912},
-  url={https://doi.org/10.5281/zenodo.14028912}
+  doi={10.5281/zenodo.23366904},
+  url={https://doi.org/10.5281/zenodo.23366904}
 }
 ```

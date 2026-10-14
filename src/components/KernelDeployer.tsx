@@ -25,7 +25,7 @@ export const KernelDeployer: React.FC = () => {
 # Antigravity Autonomous HFS & Memory-Resident Debian Kernel Deployer
 # Author: Bheemaiah (bheemaiah@alumni.iitm.ac.in)
 # Affiliations: Director, Synergy Robotics | IIT Madras Alumni
-# Release: Version 1.0.0 | Zenodo DOI: 10.5281/zenodo.14028912
+# Release: Version 1.0.0 | Zenodo DOI: 10.5281/zenodo.23366904
 # Target: Debian 12 (Bookworm) / Linux 6.12+
 # Architecture: Zero-Disk Persistent Spindle Writes (100% Volatile RAM Execution)
 # ==============================================================================
