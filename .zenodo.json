@@ -1,0 +1,39 @@
+{
+  "title": "Antigravity HFS: Memory-Resident Debian Kernel & Loopback Hole-Buffer Guard against Trailing Viruses",
+  "description": "Release Version 1.0.0 of the HFS (Hole-buffer File System) autonomous architecture. Combines a memory-resident Debian 12/Linux 6.12+ kernel (toram), kernel RAM disk (/dev/ram0), loopback sparse container (hfs.img on /dev/loop0), and cryptographic SHA-256 hole-buffer and sector slack space hashing to detect and neutralize trailing viruses.",
+  "creators": [
+    {
+      "name": "Bheemaiah",
+      "affiliation": "Director, Synergy Robotics; IIT Madras Alumni",
+      "email": "bheemaiah@alumni.iitm.ac.in"
+    }
+  ],
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "publication_date": "2026-10-14",
+  "doi": "10.5281/zenodo.14028912",
+  "keywords": [
+    "Linux Kernel",
+    "Memory-Resident Kernel",
+    "RAM Disk",
+    "Loopback Device",
+    "HFS",
+    "Hole Buffers",
+    "Sparse Files",
+    "Trailing Viruses",
+    "Slack Space Parasites",
+    "Synergy Robotics",
+    "IIT Madras Alumni",
+    "Zenodo Open Science",
+    "Antigravity Agent"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.14028912",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    }
+  ]
+}
