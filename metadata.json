@@ -1,0 +1,6 @@
+{
+  "name": "Antigravity HFS - Kernel RAM Disk & Memory Hole-Buffer Guard",
+  "description": "Autonomous Antigravity agentic app configuring a memory-resident Debian kernel, RAM disk, and loopback HFS with cryptographic hole-buffer hashing against trailing viruses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
