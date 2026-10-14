@@ -529,6 +529,9 @@ app.get('/api/hfs/export-bundle', (_req, res) => {
   const bashScript = `#!/usr/bin/env bash
 # ==============================================================================
 # Antigravity Autonomous HFS & Memory-Resident Debian Kernel Deployer
+# Author: Bheemaiah (bheemaiah@alumni.iitm.ac.in)
+# Affiliations: Director, Synergy Robotics | IIT Madras Alumni
+# Release: Version 1.0.0 | Zenodo DOI: 10.5281/zenodo.14028912
 # Target: Debian 12 (Bookworm) / Linux 6.12+
 # ==============================================================================
 set -euo pipefail
@@ -590,7 +593,7 @@ echo "[+] Antigravity Memory-Resident Debian Architecture Operational!"
 #include <linux/uaccess.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Antigravity Autonomous Systems Guard");
+MODULE_AUTHOR("Bheemaiah <bheemaiah@alumni.iitm.ac.in> [Director, Synergy Robotics; IIT Madras Alumni]");
 MODULE_DESCRIPTION("HFS Hole-Buffer Hash Verification & Trailing Virus Defense");
 MODULE_VERSION("1.0.0");
 

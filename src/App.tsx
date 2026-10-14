@@ -10,6 +10,8 @@ import { HoleBufferExplorer } from './components/HoleBufferExplorer.tsx';
 import { AgentConsole } from './components/AgentConsole.tsx';
 import { VirusLab } from './components/VirusLab.tsx';
 import { KernelDeployer } from './components/KernelDeployer.tsx';
+import { AuthorshipModal } from './components/AuthorshipModal.tsx';
+import { WhitePaperModal } from './components/WhitePaperModal.tsx';
 import type { 
   RamDiskConfig, 
   DebianKernelConfig, 
@@ -20,6 +22,8 @@ import type {
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('topology');
+  const [isAuthorshipOpen, setIsAuthorshipOpen] = useState<boolean>(false);
+  const [isWhitePaperOpen, setIsWhitePaperOpen] = useState<boolean>(false);
   const [ramDisk, setRamDisk] = useState<RamDiskConfig>({
     device: '/dev/ram0',
     type: 'brd',
@@ -244,6 +248,21 @@ export default function App() {
         onQuickScan={handleRunScan}
         isScanning={isScanning}
         quarantinedCount={quarantinedCount}
+        onOpenAuthorship={() => setIsAuthorshipOpen(true)}
+        onOpenWhitePaper={() => setIsWhitePaperOpen(true)}
+      />
+
+      {/* Authorship Modal */}
+      <AuthorshipModal
+        isOpen={isAuthorshipOpen}
+        onClose={() => setIsAuthorshipOpen(false)}
+        onOpenWhitePaper={() => setIsWhitePaperOpen(true)}
+      />
+
+      {/* White Paper Modal */}
+      <WhitePaperModal
+        isOpen={isWhitePaperOpen}
+        onClose={() => setIsWhitePaperOpen(false)}
       />
 
       {/* Main Content Area */}
@@ -294,16 +313,31 @@ export default function App() {
         {activeTab === 'deployer' && <KernelDeployer />}
       </main>
 
-      {/* Compact Status Footer */}
-      <footer className="border-t border-slate-800/80 bg-slate-950 py-3 text-[11px] font-mono text-slate-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2">
-          <div>
-            Antigravity HFS Agent // Debian 6.12 Memory-Resident Kernel // Loopback Device {loopDevice.device}
+      {/* Status & Authorship Footer */}
+      <footer className="border-t border-slate-800/80 bg-slate-950 py-3.5 text-[11px] font-mono text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-slate-300 font-semibold">Antigravity HFS</span>
+            <span className="px-1.5 py-0.2 bg-amber-950 text-amber-300 border border-amber-800 rounded text-[10px]">Release v1.0.0</span>
+            <span className="text-slate-600">•</span>
+            <span>Debian 6.12 (toram)</span>
+            <span className="text-slate-600">•</span>
+            <span>Loopback {loopDevice.device}</span>
           </div>
-          <div className="flex items-center space-x-4">
-            <span>Root: /dev/ram0 (BRD)</span>
-            <span>Sparse HFS: {loopDevice.sizeMB}MB</span>
-            <span className="text-emerald-400">Security: Kprobe VFS Enforced</span>
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              onClick={() => setIsWhitePaperOpen(true)}
+              className="text-purple-400 hover:text-purple-300 transition-colors font-medium cursor-pointer"
+            >
+              Zenodo: 10.5281/zenodo.14028912
+            </button>
+            <span className="text-slate-600">•</span>
+            <button
+              onClick={() => setIsAuthorshipOpen(true)}
+              className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium cursor-pointer"
+            >
+              Author: Bheemaiah (Director, Synergy Robotics • IIT Madras Alumni)
+            </button>
           </div>
         </div>
       </footer>

@@ -23,6 +23,9 @@ export const KernelDeployer: React.FC = () => {
   const bashScript = `#!/usr/bin/env bash
 # ==============================================================================
 # Antigravity Autonomous HFS & Memory-Resident Debian Kernel Deployer
+# Author: Bheemaiah (bheemaiah@alumni.iitm.ac.in)
+# Affiliations: Director, Synergy Robotics | IIT Madras Alumni
+# Release: Version 1.0.0 | Zenodo DOI: 10.5281/zenodo.14028912
 # Target: Debian 12 (Bookworm) / Linux 6.12+
 # Architecture: Zero-Disk Persistent Spindle Writes (100% Volatile RAM Execution)
 # ==============================================================================
@@ -85,7 +88,7 @@ echo "[+] Antigravity Memory-Resident Debian Architecture Successfully Operation
 #include <linux/slab.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Antigravity Autonomous Systems Guard");
+MODULE_AUTHOR("Bheemaiah <bheemaiah@alumni.iitm.ac.in> [Director, Synergy Robotics; IIT Madras Alumni]");
 MODULE_DESCRIPTION("HFS Hole-Buffer Hash Verification & Trailing Virus Defense");
 MODULE_VERSION("1.0.0");
 
